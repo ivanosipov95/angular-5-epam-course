@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AboutComponent, HomeComponent, PageNotFoundComponent } from './components';
+import { AboutComponent, PageNotFoundComponent } from './components';
+import { MessagesComponent } from './components/core/components';
+
 
 const routes: Routes = [
   {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'messages',
+    component: MessagesComponent,
+    outlet: 'popup'
   },
   {
     path: '',
@@ -25,7 +28,7 @@ const routes: Routes = [
   }
 ];
 
-export let appRouterComponents = [AboutComponent, HomeComponent, PageNotFoundComponent];
+export let appRouterComponents = [AboutComponent, PageNotFoundComponent];
 
 @NgModule({
   imports: [

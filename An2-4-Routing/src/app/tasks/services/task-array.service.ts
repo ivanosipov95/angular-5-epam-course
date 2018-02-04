@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 
-import {Task} from '../../task.model';
+import {Task} from '../models/task.model';
 
 const taskList = [
   new Task(1, 'Estimate', 1, 8, 8, true),

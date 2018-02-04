@@ -6,6 +6,9 @@ import {Router} from '@angular/router';
 
 import {AppRoutingModule, appRouterComponents} from './app.routing.module';
 import {AppComponent} from './app.component';
+import {TasksModule} from './tasks/tasks.module';
+import {UsersModule} from './users/users.module';
+import {CoreModule} from './components/core/core.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import {AppComponent} from './app.component';
     BrowserModule,
     CommonModule,
     FormsModule,
-    AppRoutingModule
+    TasksModule,
+    UsersModule,
+    AppRoutingModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
