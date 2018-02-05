@@ -7,8 +7,10 @@ import {Router} from '@angular/router';
 import {AppRoutingModule, appRouterComponents} from './app.routing.module';
 import {AppComponent} from './app.component';
 import {TasksModule} from './tasks/tasks.module';
-import {UsersModule} from './users/users.module';
-import {CoreModule} from './components/core/core.module';
+// import {UsersModule} from './users/users.module';
+import {CoreModule} from './core/core.module';
+// import { AdminModule } from './admin/admin.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,11 @@ import {CoreModule} from './components/core/core.module';
     CommonModule,
     FormsModule,
     TasksModule,
-    UsersModule,
+    // UsersModule,
+    // AdminModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
